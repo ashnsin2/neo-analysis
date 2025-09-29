@@ -53,7 +53,7 @@ Tables:
 
    | Table          | Purpose        |
    |----------------|----------------|
-   | neo_logs       | Store 'timestamp' level' and 'message text' |
+   | neo_logs       | Store 'timestamp', level' and 'message text' |
 
 
 
