@@ -21,10 +21,10 @@ The pipeline is built using the Medallion architecture (Bronze → Silver → Go
 Files:
 ------
 
-1. neo_ingest_brz.ipynb      — Parameterized ingestion from NASA API with logging
-2. neo_transform_slv.ipynb   — Cleansing, orbital period calculations, and schema validation
-3. neo_aggr_gld.ipynb        — threat level, size, and proximity
-4. neo_visualization.ipynb   — Verify Acceptance criteria (SQL, visualization)
+1. 01_neo_ingest_br.ipynb       — Parameterized ingestion from NASA API with logging
+2. 02_neo_transform_slv.ipynb   — Cleansing, orbital period calculations, and schema validation
+3. 03_neo_aggr_gld.ipynb        — threat level, size, and proximity
+4. neo_visualization.ipynb      — Verify Acceptance criteria (SQL, visualization)
 
 
 Tables:
@@ -34,9 +34,10 @@ Tables:
    | Table        | Purpose        |
    |--------------|----------------|
    | neos         | store neo data |
-   | approaches   |store close approaches data|
+   | approaches   | store close approaches data|
+   | orbits       | orbit data|
 
-2. Silver layer:
+3. Silver layer:
 
    | Table          | Purpose        |
    |----------------|----------------|
@@ -47,6 +48,7 @@ Tables:
    | Table          | Purpose        |
    |----------------|----------------|
    | neo_analysis   | store dashboard and visualization ready data |
+   | neo_analysis_v1| dashboard ready data, hazard_level wise|
 
 
 *  Log table:
